@@ -50,6 +50,8 @@
 |---|---|
 | `#anim(*playerid)#` | Возвращает числовой индекс активной анимации игрока. |
 | `#skin(*playerid)#` | Возвращает модель скина игрока. |
+| `#isMaleSkin(skinid)#` | Возвращает `0/1`, является ли указанный `skinid` мужским скином. |
+| `#isFemaleSkin(skinid)#` | Возвращает `0/1`, является ли указанный `skinid` женским скином. |
 | `#acid(*playerid)#` | Возвращает глобальный ID игрока. |
 | `#gun(*playerid)#` / `#weapon(*playerid)#` | Возвращает ID оружия игрока. |
 | `#ammo(*playerid)#` | Возвращает количество патронов в активном слоте оружия. |
@@ -151,7 +153,7 @@
 | `#raycast(cam/pos dist col coord)#` | Возвращает результат коллизии луча. Используется для raycast от камеры/позиции. |
 | `#customRaycast(x y z angle dist 0/1 x/y/z/xyz)#` | Raycast от заданной позиции с собственными координатами, углом, дистанцией, режимом `0/1` и выбором возвращаемой координаты. |
 | `#getAngle(x1 y1 x2 y2)#` | Возвращает FA/угол от точки `x1 y1` до `x2 y2`. |
-| `#getFAtoPlayer(targetid *playerid)#` / `#getAngleToPlayer(targetid *playerid)#` | Возвращает FA/угол от игрока к `targetid`. |
+| `#getFAtoPlayer(targetid *playerid)#` / `#getAngleToPlayer(targetid *playerid)#` / `#GetAngleToPlayer(targetid *playerid)#` | Возвращает FA/угол от игрока к `targetid`. |
 
 ---
 
@@ -402,9 +404,11 @@ second
 | Функция | Описание |
 |---|---|
 | `#nearActor(dist, skinid)#` | Возвращает ближайшего актёра в радиусе `dist`. `skinid` необязателен. |
+| `#arActor(dist, skinid)#` | Возвращает ID ближайшего актёра в радиусе `dist`. `skinid` необязателен; если указан, ищет ближайшего актёра только с этим скином. Похоже на алиас/вариант `#nearActor(dist, skinid)#`. |
 | `#actorXYZ(actorid)#` | Возвращает координаты актёра. |
 | `#actorX(actorid)#` / `#actorY(actorid)#` / `#actorZ(actorid)#` | Возвращает отдельную координату актёра. |
 | `#GetDistActor(actorid, *playerid)#` | Возвращает дистанцию до актёра. |
+| `#actDistActor(actorid, *playerid)#` | Возвращает дистанцию от указанного игрока до актёра `actorid`. Если `*playerid` не указан, вероятно используется текущий игрок/контекст вызова. |
 | `#actorState(actorid)#` / `#actorStatus(actorid)#` | Возвращает статус актёра. |
 | `#actorAnim(actorid)#` | Возвращает анимацию актёра из списка. |
 | `#actorAltAnim(actorid)#` | Возвращает альтернативную анимацию актёра. |
