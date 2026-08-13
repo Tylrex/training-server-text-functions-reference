@@ -18,6 +18,8 @@
 > - Добавлена функция `#IsVehicleStreamedIn(vehicleid playerid*)#` для проверки нахождения транспорта в зоне стрима — [перейти к разделу](#транспортные-средства).
 > - Добавлена функция `#IsActorStreamedIn(actorid playerid*)#` для проверки нахождения актёра в зоне стрима — [перейти к разделу](#актёры).
 > - Добавлена функция `#version(playerid*)#`, возвращающая версию игры игрока — [перейти к разделу](#данные-игрока).
+> - Добавлены функции `#camtarget#` / `#camtargetplayer#`, `#camtargetactor#`, `#camtargetobject#` и `#camtargetveh#` для получения текущей цели камеры — [перейти к разделу](#данные-игрока).
+> - Добавлены функции `#otext*#` для получения текста и параметров текста объекта — [перейти к разделу](#объекты).
 
 ---
 
@@ -476,6 +478,13 @@ second
 | `#actionText(actionid)#` | Возвращает текст action. |
 | `#nearAction(dist playerid*)#` | Возвращает ближайший action к игроку. |
 | `#texture(objectid slot)#` | Возвращает индекс текстуры объекта. |
+| `#otext(objectid slot)#` | Возвращает текст `otext` в указанном слоте объекта. |
+| `#otextfontface(objectid slot)#` | Возвращает разрешение `otext` в указанном слоте объекта. |
+| `#otextfontsize(objectid slot)#` | Возвращает размер шрифта `otext` в указанном слоте объекта. |
+| `#otextbold(objectid slot)#` | Возвращает `0/1`, используется ли жирный шрифт у `otext`. |
+| `#otextfontcolor(objectid slot)#` | Возвращает цвет шрифта `otext`. |
+| `#otextbackcolor(objectid slot)#` | Возвращает цвет фона `otext`. |
+| `#otextalignment(objectid slot)#` | Возвращает выравнивание `otext`. |
 
 ---
 
