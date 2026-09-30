@@ -41,12 +41,7 @@
 ---
 
 
-> Источник: тема форума Training Server  
-> Тема: `Cписок текстовых функций и коллбэков на Классическом текстовом движке`  
-> URL: https://forum.training-server.com/d/22204-cpisok-tekstovyh-funktsiy-i-kollbekov-na-klassicheskom-tekstovom-dvizhke  
->  
-> Этот файл собран как удобный Markdown-справочник по одной теме форума.  
-> Формулировки описаний приведены в более аккуратный вид, структура и смысл сохранены.
+
 
 ---
 
